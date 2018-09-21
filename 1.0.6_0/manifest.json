@@ -1,0 +1,23 @@
+{
+   "author": "The Daily Show",
+   "browser_action": {
+      "default_popup": "/pages/popup/index.html"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "exclude_matches": [ "https://docs.google.com/*", "https://drive.google.com/*" ],
+      "js": [ "/js/content_scripts/main.js" ],
+      "matches": [ "https://*/*", "http://*/*" ]
+   } ],
+   "description": "It's the Trump Toad Extension!",
+   "icons": {
+      "128": "/img/logo.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgrOof2xaRdSYoMUxzdeuoXiS1nniHHIUFkAN187OH2qkmf1fipTW4//hSJILeez+lR1MYWyb65TWVbyR6erP3k/HOlNfL2TbDM1ZkqthHspuSuvSO91kJHSdD48R3gS9a39tV+HaIdul1tQ5lGMVoSCntNpTdnHCKWCXkVqY5xmOdJWNbm+vpzM1norMqluKAsLOupudN7NDUVC4XlvJhcxApIWwYSIarKpbuj19iqIGIic/rJSzB564xitUykh8lyNPC0llEvkvbLTg+HbjuUYPe/Vub7kMFoTvAvPj4EzOerIqhcRc03fvA2PWga1fI252S5appBstMFhXTh3GKwIDAQAB",
+   "manifest_version": 2,
+   "name": "Trump Toad Extension",
+   "permissions": [ "http://*/*", "https://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.6",
+   "web_accessible_resources": [ "/*" ]
+}
